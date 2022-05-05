@@ -13,7 +13,7 @@ public class Man {
 		PropertyConfigurator.configure(log4jConfigFile);
 		logger.info("this is a dmessage....:"+str);
 		logger.warn("warning message...:"+str);
-		logger.error("error messggage...:"+str);
+		logger.error("error rrtmessggage...:"+str);
 	
 	}
 
