@@ -30,4 +30,5 @@ public class Mutability {
 }
 class world{
 	int size=10;
+	
 }
