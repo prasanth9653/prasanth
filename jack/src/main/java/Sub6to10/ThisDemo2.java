@@ -2,7 +2,7 @@ package Sub6to10;
 
 
 	public class ThisDemo2 {
-		static String s;
+		String s;
 		public ThisDemo2(String s) {
 			this.s=s;
 		}
