@@ -1,4 +1,4 @@
-package Sub6to10;
+package sub6to10;
 
 public class Aadhi {
 

@@ -1,13 +1,15 @@
-package Sub6to10;
+package sub6to10;
 
 public class InnerClassDemo {
 
 	public static void main(String[] args) {
 //		Ajith a=new Ajith();
 //		a.bike();
+		
+		Ajith a=new Ajith();
+		a.bike();
 		Kali k=new Kali();
 		k.car();
-		
 
 	}
 
@@ -17,8 +19,7 @@ class Kali
 	public void car()
 	{
 		Ajith.Ganesh g=new Ajith().new Ganesh();
-		Ajith a=new Ajith();
-		a.bike();
+		
 		g.taxi(10);
 		//g.bike();
 		
