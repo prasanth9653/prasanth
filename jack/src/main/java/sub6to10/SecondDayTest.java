@@ -22,10 +22,10 @@ package sub6to10;
 		System.out.println("It is Asyn Part1.........");
 		}
 		}.meth();
-		T1 t=SecondDayTest::dis;
-		t.meth();
-		T1 a=()->{System.out.println("It is lamda meth part1...........");};
-		a.meth();
+		//T1 t=SecondDayTest::dis;
+		//t.meth();
+		//T1 a=()->{System.out.println("It is lamda meth part1...........");};
+		//a.meth();
 		Raja b=new Raja();
 		b.meth();
 		int c=new T2() {
