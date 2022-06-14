@@ -1,9 +1,11 @@
 package anoundtech;
 
 import java.io.File;
+
 import java.util.Scanner;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+
 
 public class LoopDemo {
 	  static Logger logger =Logger.getLogger(LoopDemo.class);
