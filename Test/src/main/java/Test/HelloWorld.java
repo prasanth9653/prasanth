@@ -10,7 +10,10 @@ public class HelloWorld {
 	public static void main(String[] args) {
 		String log4jConfigFile=System.getProperty("user.dir")+File.separator+"log4j.Properties";
 		PropertyConfigurator.configure(log4jConfigFile);
+
 		System.out.println("HelloWorld.............");
+		System.out.println("HelloWorld..............");
+
 		logger.info("Hello");
 	}
 
