@@ -1,0 +1,34 @@
+INFO    2022-05-05 12:51:34,558 [main] jack.Man  - this is a dmessage....:welcome to sonar
+WARN    2022-05-05 12:51:34,560 [main] jack.Man  - warning message...:welcome to sonar
+ERROR   2022-05-05 12:51:34,560 [main] jack.Man  - error message...:welcome to sonar
+INFO    2022-05-13 10:13:30,429 [main] anoundtech.LoopDemo  - n Please Enter any integer Value below 10: 
+INFO    2022-05-13 10:13:53,910 [main] anoundtech.LoopDemo  -  Sum of the Numbers From the While Loop is: %d 27
+INFO    2022-05-13 10:17:55,437 [main] anoundtech.LoopDemo  - n Please Enter any integer Value below 10: 
+INFO    2022-05-13 10:18:00,253 [main] anoundtech.LoopDemo  -  Sum of the Numbers From the While Loop is: %d 29
+INFO    2022-05-13 10:18:59,101 [main] anoundtech.LoopDemo  - n Please Enter any integer Value below 10: 
+INFO    2022-05-13 10:19:03,126 [main] anoundtech.LoopDemo  -  Sum of the Numbers From the While Loop is:29
+INFO    2022-05-13 10:21:36,415 [main] anoundtech.LoopDemo  - n Please Enter any integer Value below 10: 
+INFO    2022-05-13 10:21:42,598 [main] anoundtech.LoopDemo  -  Sum of the Numbers From the While Loop is:27
+INFO    2022-05-13 10:22:40,915 [main] anoundtech.LoopDemo  - n Please Enter any integer Value below 10: 
+INFO    2022-05-13 10:23:03,506 [main] anoundtech.LoopDemo  - n Please Enter any integer Value below 10: 
+INFO    2022-05-13 10:23:06,253 [main] anoundtech.LoopDemo  -  Sum of the Numbers From the While Loop is:27
+INFO    2022-05-13 10:24:13,770 [main] anoundtech.LoopDemo  - n Please Enter any integer Value below 10: 
+INFO    2022-05-13 10:24:15,821 [main] anoundtech.LoopDemo  -  Sum of the Numbers From the While Loop is:10
+INFO    2022-05-13 10:24:26,472 [main] anoundtech.LoopDemo  - n Please Enter any integer Value below 10: 
+INFO    2022-05-13 10:24:27,677 [main] anoundtech.LoopDemo  -  Sum of the Numbers From the While Loop is:19
+INFO    2022-05-13 10:24:32,574 [main] anoundtech.LoopDemo  - n Please Enter any integer Value below 10: 
+INFO    2022-05-13 10:24:35,191 [main] anoundtech.LoopDemo  -  Sum of the Numbers From the While Loop is:54
+INFO    2022-05-13 10:24:55,203 [main] anoundtech.LoopDemo  - n Please Enter any integer Value below 10: 
+INFO    2022-05-13 10:25:02,925 [main] anoundtech.LoopDemo  -  Sum of the Numbers From the While Loop is:55
+INFO    2022-05-13 10:25:10,607 [main] anoundtech.LoopDemo  - n Please Enter any integer Value below 10: 
+INFO    2022-05-13 10:25:12,685 [main] anoundtech.LoopDemo  -  Sum of the Numbers From the While Loop is:55
+INFO    2022-05-13 10:25:33,245 [main] anoundtech.LoopDemo  - n Please Enter any integer Value below 10: 
+INFO    2022-05-13 10:25:35,517 [main] anoundtech.LoopDemo  -  Sum of the Numbers From the While Loop is:0
+INFO    2022-05-13 10:25:41,345 [main] anoundtech.LoopDemo  - n Please Enter any integer Value below 10: 
+INFO    2022-05-13 10:25:44,671 [main] anoundtech.LoopDemo  -  Sum of the Numbers From the While Loop is:-1073741869
+INFO    2022-05-13 10:27:27,907 [main] anoundtech.LoopDemo  - n Please Enter any integer Value below 10: 
+INFO    2022-05-13 10:27:30,853 [main] anoundtech.LoopDemo  -  Sum of the Numbers From the While Loop is:
+INFO    2022-05-13 10:28:41,937 [main] anoundtech.LoopDemo  - n Please Enter any integer Value below 10: 
+INFO    2022-05-13 10:28:45,365 [main] anoundtech.LoopDemo  -  Sum of the Numbers From the While Loop is:
+INFO    2022-05-13 10:29:10,953 [main] anoundtech.LoopDemo  - n Please Enter any integer Value below 10: 
+INFO    2022-05-13 10:29:15,508 [main] anoundtech.LoopDemo  -  Sum of the Numbers From the While Loop is:5
