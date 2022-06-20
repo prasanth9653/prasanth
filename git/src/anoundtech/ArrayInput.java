@@ -21,7 +21,7 @@ public class ArrayInput {
 			}
 			
 
-System.out.println("sum of Array Element is .."+sum);
+System.out.println("sum of Array Element is ..."+sum);
 
 	}
 

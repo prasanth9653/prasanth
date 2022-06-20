@@ -4,7 +4,7 @@ public class ArgumentDemo {
 	public static void main(String[] args) {
 		String n1=args[0];
 		
-		System.out.println(n1);
+		System.out.println(n1 );
 		
 		System.out.println(args[1]);
 		
