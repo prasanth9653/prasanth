@@ -3,9 +3,9 @@ package sub6to10;
 
 //import subuml.shoe;
 
-public class shoe {
+public class Shoes {
 	interface shoemanifactor {
-		shoe makeshow();
+		Shoes makeshow();
 	}
 
 }
