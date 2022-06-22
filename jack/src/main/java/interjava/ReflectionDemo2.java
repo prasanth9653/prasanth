@@ -6,14 +6,14 @@ public class ReflectionDemo2 {
 		Demo obj=new Demo();//static object creation
 		System.out.println(obj);
 		
-		Demo demo=(Demo)Class.forName("jdk5andabove.Demo").newInstance();//dynamic
+		Demo demo=(Demo)Class.forName("interjava.Demo").newInstance();//dynamic
 		System.out.println(demo);
 		
-		demo=(Demo)Class.forName("jdk5andabove.Demo").getConstructor().newInstance();
+		demo=(Demo)Class.forName("interjava.Demo").getConstructor().newInstance();
 		
 		System.out.println(demo);
 		
-		demo=(Demo)Class.forName("jdk5andabove.Demo").getConstructor(String.class,int.class).newInstance("hello",100);
+		demo=(Demo)Class.forName("interjava.Demo").getConstructor(String.class,int.class).newInstance("hello",100);
 		System.out.println(demo);
 		
 		Class c=demo.getClass();
