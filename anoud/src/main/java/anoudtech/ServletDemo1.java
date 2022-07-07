@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 				@WebInitParam(name="url",value="my sql driver urlllllll....")
 				}
 	)
-public class Demo extends HttpServlet {
+public class ServletDemo1 extends HttpServlet {
 	
 	@Override
 	public void init(ServletConfig config) throws ServletException {
