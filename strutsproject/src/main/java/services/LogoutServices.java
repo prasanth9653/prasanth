@@ -8,7 +8,7 @@ import dbpack.DBConnection;
 public class LogoutServices extends ServiceRequest
 {@Override
 public String executeService(HttpServletRequest request, HttpServletResponse response) {
-	String name=request.getSession().getAttribute("cname").toString();
+	String name=request.getSession().getAttribute("ename").toString();
 	
 	DBConnection con=new DBConnection();
 	

@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @WebServlet("*.do")
 public class ActionServlet extends HttpServlet {
@@ -34,6 +35,8 @@ public class ActionServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		HttpSession session=request.getSession();
+		session.setMaxInactiveInterval(20);
 		rs.process(request, response);
 		
 	}
@@ -41,7 +44,7 @@ public class ActionServlet extends HttpServlet {
 	@Override
 	public void destroy() {
 		
-		System.out.println("Old deleted.............");
+		System.out.println("deleted.............");
 		
 	}
 

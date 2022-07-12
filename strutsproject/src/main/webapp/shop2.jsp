@@ -7,17 +7,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Fruit Shop</h1>
+
+<h1>Vegtable Shop</h1>
 <form action="purchase.do" method="post">
 <input type="hidden" name="action" value="purchase">
-<input type="hidden" name="shop" value="shop2">
-<input type="radio" name="apple" value="rs50">Apple
-<input type="radio" name="mango" value="rs30">Mango
-<input type="radio" name="banana" value="rs20">Banana
+<input type="hidden" name="shop" value="shop3">
+<input type="checkbox" name="carrot" value="rs50">Carrot
+<input type="checkbox" name="Potato" value="rs70">Potato
+<input type="checkbox" name="beans" value="rs40">Beans
 <input type="submit" value="Next">
 </form>
 </center>
-
 <hr>
 <jsp:include page="logout.jsp" />
 <hr>

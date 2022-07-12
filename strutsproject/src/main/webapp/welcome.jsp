@@ -8,7 +8,7 @@
 </head>
 <body>
 <hr>
-<jsp:include page="logout.jsp" />
+
 <hr>
 <h1>Welcome To Super Market.........</h1>
 <hr>

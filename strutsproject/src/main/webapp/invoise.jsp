@@ -8,13 +8,23 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+
 <%
 Enumeration em=session.getAttributeNames();
 while(em.hasMoreElements()){
 	String a=em.nextElement().toString();
 	String b=session.getAttribute(a).toString();
+if(a.equals("action")||a.equals("shop")){
+		
+	}else{
 	out.println("<h1>"+a+":"+b+"<h1>");
+	}
+	
 }
 %>
+<hr>
+<jsp:include page="logout.jsp" />
+<hr>
 </body>
 </html>

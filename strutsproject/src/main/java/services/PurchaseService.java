@@ -12,6 +12,8 @@ public String executeService(HttpServletRequest request, HttpServletResponse res
 	
 	HttpSession hs=request.getSession();
 	
+	String nextshop=request.getParameter("shop");
+	
 	while(em.hasMoreElements()) {
 		
 		String a=em.nextElement().toString();
@@ -22,7 +24,7 @@ public String executeService(HttpServletRequest request, HttpServletResponse res
 		
 	}
 	
-	return "Completed";
+	return nextshop;
 	
 }
 

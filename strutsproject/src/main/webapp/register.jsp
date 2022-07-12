@@ -7,13 +7,17 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 <center>
 <form action="register.do" method="post">
 <input name="action" value="register" type="hidden">
-<input placeholder="Enter User Name" name="cname" type="text">
-<input placeholder="Enter Password" name="cpass" type="password">
+<input placeholder="Enter User Name" name="ename" type="text">
+<input placeholder="Enter Password" name="epass" type="password">
 <input type="submit" value="register">
 </form>
 </center>
+<hr>
+<jsp:include page="logout.jsp" />
+<hr>
 </body>
 </html>

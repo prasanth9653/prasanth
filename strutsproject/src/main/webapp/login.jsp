@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 <center>
 <form action="login.do" method="post">
 <input name="action" value="login" type="hidden">
@@ -15,6 +16,7 @@
 <input type="submit" value="login">
 </form>
 </center>
+
 
 </body>
 </html>
