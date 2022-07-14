@@ -29,7 +29,7 @@ public class ServletDemo2 extends HttpServlet {
 			String path=app.getRealPath("/WEB-INF/config.properties");
 			Properties prop=new Properties();
 			prop.load(new FileInputStream(path));
-			System.out.println(prop.get("hello"));
+			System.out.println(prop.get("hello1"));
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
