@@ -26,7 +26,7 @@ public class ServletDemo1 extends HttpServlet {
 	
 	@Override
 	public void init(ServletConfig config) throws ServletException {
-		System.out.println("Init Method Called");
+		System.out.println("Init Method 1 Called");
 		String mydrivervalue=config.getInitParameter("driver");
 		System.out.println(mydrivervalue);
 		System.out.println(config.getInitParameter("url"));
