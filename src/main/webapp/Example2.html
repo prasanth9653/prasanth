@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome All</title>
+<SCRIPT>
+      function chkfrm()
+      {
+          var x = document.Card.name.value;
+                   if(x.length==0)
+         {
+              alert("Please Enter Name\n");
+              return false;
+          }
+          else
+             return true;
+        }
+       </SCRIPT>
+</head>
+<body>
+<FORM NAME="Card" METHOD=POST
+                     ACTION="Hello1" onsubmit="return chkfrm();">
+          <CENTER>
+            <B> Enter your name: </B>
+             <INPUT TYPE=TEXT NAME="name"> <P>
+             <INPUT TYPE=SUBMIT>
+           </CENTER>
+      </FORM>
+
+</body>
+</html>
+
+
+
+
+
+
