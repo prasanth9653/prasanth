@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-<<<<<<< HEAD
-	<name>anoud2</name>
+	<name>strutsproject</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -34,14 +33,5 @@
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
-=======
-	<name>prasanth</name>
-	<comment></comment>
-	<projects>
-	</projects>
-	<buildSpec>
-	</buildSpec>
-	<natures>
->>>>>>> branch 'master' of https://github.com/prasanth9653/prasanth.git
 	</natures>
 </projectDescription>
