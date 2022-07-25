@@ -39,14 +39,14 @@ public class JDBC_CIUD {
 					String query5="insert into student values(101,'ajith','chenni school')";
 					
 					
-					ps=con.prepareStatement(query2,query3,query4,);
+					ps=con.prepareStatement(query2);
 					ps.execute();
 					System.out.println("value inserted successfully");
 					
 		}
 		catch (Exception e)
 		{
-			e.printStackTrace(
+			e.printStackTrace();
 		}
 	}
 }
