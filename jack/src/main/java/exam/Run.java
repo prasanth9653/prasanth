@@ -12,6 +12,8 @@ public class SimpleTesting extends Run{
         run.showSpeed();
         run.speed = 20;
         run.showSpeed();
+        
+        run.speed;
     }
 }
 }
