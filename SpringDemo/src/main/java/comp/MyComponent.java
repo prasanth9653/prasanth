@@ -12,7 +12,7 @@ public class MyComponent {
 	private MyService mys;
 	
 	public void comp(){
-		System.out.println("comp method called");
+		System.out.println("comp1 method called");
 		mys.serv();
 	}
 
