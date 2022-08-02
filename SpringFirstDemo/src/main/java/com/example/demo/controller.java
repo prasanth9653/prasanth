@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -20,7 +21,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 public class controller {
 	@Autowired
-	
 	private EmployeeService empser;
 	
 	
@@ -39,7 +39,7 @@ public class controller {
 		
 		emp.setFlag(0);
 		
-		int a=emp.getEmpId()+1;
+		int a=emp.getEmpid()+1;
 		
 		ModelAndView mandv=new ModelAndView();
 		mandv.addObject("myobj", emp);
@@ -47,35 +47,36 @@ public class controller {
 		return mandv;
 	}
 	@RequestMapping(method=RequestMethod.POST,value = "/register")
-	public ModelAndView Prcessform(@ModelAttribute Employee emp,HttpServletRequest request)
+	public ModelAndView Prcessform(@ModelAttribute("myobj")Employee emp,HttpServletRequest request)
 	{
-		System.out.println("Employee Name:"+emp.getEmpName());
+		System.out.println("Employee Name:"+emp.getEmpname());
 		
 		
 		ModelAndView mandv=new ModelAndView();
 		
 		
-		String password=request.getParameter("Password");
+		String pass=request.getParameter("pass");
 		
-		String password1=request.getParameter("Password1");
+		String pass1=request.getParameter("pass1");
 		
-		if(password.equals(password1)) {
+		if(pass.equals(pass1)) {
 		
-		List<Employee> a=empser.checkEmpId(emp);
+		List<Employee> e=empser.checkempid(emp);
 		
-		Iterator<Employee> itr=a.iterator();
+		Iterator<Employee> itr=e.iterator();
 		
 		int b=0;
 		
 		while(itr.hasNext()) {
 			
-			b=itr.next().getEmpId();
+			b=itr.next().getEmpid();
 			
 		}
 		
 		System.out.println(b);
 		
-		emp.setEmpId(b+1);
+		emp.setEmpid(b+1);
+		
 		
 		mandv.addObject("myobj",emp);
 		
@@ -94,47 +95,47 @@ public class controller {
 		}
 		
 	}
+
+	@RequestMapping(method = RequestMethod.GET, value = "/forms")
+	public ModelAndView websearch1() {
+
+		ModelAndView mandv=new ModelAndView();
+		
+		mandv.setViewName("login");
+		
+		return mandv;
+		
+	}
+	
+	@RequestMapping(method = RequestMethod.POST,value = "/forms")
+	public ModelAndView welcome1(HttpServletRequest request) {
+		
+		ModelAndView mandv=new ModelAndView();
+		
+		String empname=request.getParameter("empname");
+		
+		String pass=request.getParameter("pass");
+		
+		System.out.println(empname+":"+pass);
+		
+		List<Employee> e=empser.checkUser(empname, pass);
+		
+		Iterator<Employee> itr=e.iterator();
+		
+		while(itr.hasNext()) {
+			
+			mandv.setViewName("welcome");
+			
+			return mandv;
+			
+		}
+		
+		mandv.setViewName("error");
+		
+		return mandv;
+		
+	}
 }
-//	@RequestMapping(method = RequestMethod.GET, value = "/forms1")
-//	public ModelAndView websearch1() {
-//		
-//		ModelAndView mv=new ModelAndView();
-//		
-//		mv.setViewName("login");
-//		
-//		return mv;
-//		
-//	}
-//	
-//	@RequestMapping(method = RequestMethod.POST,value = "/forms1")
-//	public ModelAndView welcome1(HttpServletRequest request) {
-//		
-//		ModelAndView mv=new ModelAndView();
-//		
-//		String name=request.getParameter("name");
-//		
-//		String pass=request.getParameter("pass");
-//		
-//		System.out.println(name+":"+pass);
-//		
-//		List<Employee> c=empser.checkUser(, pass);
-//		
-//		Iterator<Customers> itr=c.iterator();
-//		
-//		while(itr.hasNext()) {
-//			
-//			mv.setViewName("welcome");
-//			
-//			return mv;
-//			
-//		}
-//		
-//		mv.setViewName("error");
-//		
-//		return mv;
-//		
-//	}
-//}
-//	}
-//	
+	
+	
 

@@ -11,11 +11,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Transactional
-
 public class EmployeeService {
 	@Autowired
-	
-	
 	private EmployeeDAO empdao;
 	
 
@@ -33,16 +30,16 @@ public class EmployeeService {
 		getEmpdao().save(emp);
 	}
 	
-	public List<Employee> checkUser(String EmpName,String Password){
+	public List<Employee> checkUser(String empname,String pass){
 		
-		return getEmpdao().CheckUser(EmpName, Password);
+		return getEmpdao().CheckUser(empname, pass);
 		
 	}
 	
 	
-	public List<Employee> checkEmpId(Employee emp) {
+	public List<Employee> checkempid(Employee emp) {
 		
-		return getEmpdao().checkEmpId(emp);
+		return getEmpdao().checkempid(emp);
 	}
 
 

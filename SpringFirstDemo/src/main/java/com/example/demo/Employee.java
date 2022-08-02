@@ -1,6 +1,6 @@
 package com.example.demo;
 
-import java.sql.Blob;
+
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -9,56 +9,50 @@ import javax.persistence.Id;
 
 public class Employee {
 	@Id
-	private int EmpId;
-	private String EmpName;
-	private String Password;
-	private String EmpCity;
-	private String Address;
-	private long ContactNum;
+	private int empid;
+	private String empname;
+	private String pass;
+	private int age;
+	private String empcity;
+	private String addr;
+	private long cnum;
 	private String img;
 	private int flag;
-	public int getEmpId() {
-		return EmpId;
+	public int getEmpid() {
+		return empid;
 	}
-	public void setEmpId(int empId) {
-		EmpId = empId;
+	public void setEmpid(int empid) {
+		this.empid = empid;
 	}
-	public String getEmpName() {
-		return EmpName;
+	public String getEmpname() {
+		return empname;
 	}
-	public void setEmpName(String empName) {
-		EmpName = empName;
+	public void setEmpname(String empname) {
+		this.empname = empname;
 	}
-	public String getPassword() {
-		return Password;
+	public String getPass() {
+		return pass;
 	}
-	public void setPassword(String password) {
-		Password = password;
+	public void setPass(String pass) {
+		this.pass = pass;
 	}
-	public String getEmpCity() {
-		return EmpCity;
+	public String getEmpcity() {
+		return empcity;
 	}
-	public void setEmpCity(String empCity) {
-		EmpCity = empCity;
+	public void setEmpcity(String empcity) {
+		this.empcity = empcity;
 	}
-	public String getAddress() {
-		return Address;
+	public String getAddr() {
+		return addr;
 	}
-	public void setAddress(String address) {
-		Address = address;
+	public void setAddr(String addr) {
+		this.addr = addr;
 	}
-	public long getContactNum() {
-		return ContactNum;
+	public long getCnum() {
+		return cnum;
 	}
-	public void setContactNum(long contactNum) {
-		ContactNum = contactNum;
-	}
-
-	public int getFlag() {
-		return flag;
-	}
-	public void setFlag(int flag) {
-		this.flag = flag;
+	public void setCnum(long cnum) {
+		this.cnum = cnum;
 	}
 	public String getImg() {
 		return img;
@@ -66,7 +60,18 @@ public class Employee {
 	public void setImg(String img) {
 		this.img = img;
 	}
-	
+	public int getFlag() {
+		return flag;
+	}
+	public void setFlag(int flag) {
+		this.flag = flag;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
 	
 	
 

@@ -35,12 +35,12 @@ public class mycontroller {
 		
 		System.out.println("saving employee details");
 		
-		emp.setEmpId(1);
-		emp.setEmpName("prasanth");
-		emp.setPassword("jack1234");
-		emp.setEmpCity("nagercoil");
-		emp.setAddress("KanniyaKumari");
-		emp.setContactNum(1234567899);
+		emp.setEmpid(1);
+		emp.setEmpname("prasanth");
+		emp.setPass("jack1234");
+		emp.setEmpcity("nagercoil");
+		emp.setAddr("KanniyaKumari");
+		emp.setCnum(1234567899);
 		emp.setFlag(0);
 //		emp.setImg("prasa");
 		

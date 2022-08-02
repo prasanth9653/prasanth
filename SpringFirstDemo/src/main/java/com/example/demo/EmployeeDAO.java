@@ -13,11 +13,11 @@ import org.springframework.stereotype.Repository;
 public interface EmployeeDAO extends JpaRepository<Employee, Integer> {
 	
 	
-	@Query("from employee where emp_name=?1 and password=?2")
-	public List<Employee> CheckUser(String EmpName,String Password);
+	@Query("from Employee where empname=?1 and pass=?2")
+	public List<Employee> CheckUser(String empname,String pass);
 	
-	@Query("from employee order by emp_id  ASC")
-	public List<Employee> checkEmpId(Employee emp);
+	@Query("from Employee order by empid  ASC")
+	public List<Employee> checkempid(Employee emp);
 
 
 }

@@ -3,17 +3,19 @@
 <form:form action="/cont/register" method="post" modelAttribute="myobj">
 
 
-EmployeeName<form:input path="EmpName"/><br>
+EmployeeName<form:input type="text" path="empname"/><br>
 <br>
-Password<form:input path="Password"/><br>
+Password<input type="password" name="pass"/><br>
 <br>
-Re-Enter Password<form:input path="Password1"/>
+Re-Enter Password<input type="password" name="pass1"/>
 <br>
-EmployeeCity<form:input path="EmpCity"/><br>
+Age<form:input type="text" path="age"/>
 <br>
-Employee Address<form:input path="Address"/><br>
+EmployeeCity<form:input type="text" path="empcity"/><br>
 <br>
-ContactNumber<form:input path="ContactNum"/><br>
+Employee Address<form:input type="text" path="addr"/><br>
+<br>
+ContactNumber<form:input type="text"  path="cnum"/><br>
 <br>
 image:<form:input type="file" path="img"/><br>
 
