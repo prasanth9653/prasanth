@@ -50,6 +50,7 @@ public class controller {
 	public ModelAndView Prcessform(@ModelAttribute("myobj")Employee emp,HttpServletRequest request)
 	{
 		System.out.println("Employee Name:"+emp.getEmpname());
+		System.out.println("");
 		
 		
 		ModelAndView mandv=new ModelAndView();
