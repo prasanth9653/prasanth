@@ -83,7 +83,7 @@ public class controller {
 		
 		empser.saveEmployee(emp);
 		
-		mandv.setViewName("welcome");
+		mandv.setViewName("success");
 		
 		return mandv;
 		
