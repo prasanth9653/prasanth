@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import java.util.Iterator;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -41,6 +42,15 @@ public class EmployeeService {
 		
 		return getEmpdao().checkempid(emp);
 	}
+	public void updateFlag(int a,String empname,String pass) { 
+		
+		List<Employee> emp=getEmpdao().CheckUser(empname, pass);  
+		
+		Iterator<Employee> itr=emp.iterator();
+			
+		Employee cd=itr.next();	
+		cd.setFlag(a);	
+		getEmpdao().save(cd); }
 
 
 }
