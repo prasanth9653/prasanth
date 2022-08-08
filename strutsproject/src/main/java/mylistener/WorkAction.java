@@ -23,7 +23,7 @@ public class WorkAction implements HttpSessionListener {
      * @see HttpSessionListener#sessionDestroyed(HttpSessionEvent)
      */
     public void sessionDestroyed(HttpSessionEvent se)  { 
-         System.out.println("Session Destroyed");
+         System.out.println("Session Destroyed....");
          DBConnection con=new DBConnection();
          HttpSession session=se.getSession();
          Object obj=session.getAttribute("ename");
