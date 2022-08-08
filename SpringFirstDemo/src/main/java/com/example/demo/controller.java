@@ -132,10 +132,13 @@ public class controller {
 		while(itr.hasNext()) {
 			
 			if(itr.next().getFlag()==0) {
+				
+				HttpSession hs=request.getSession(); 
+				hs.setMaxInactiveInterval(10);
 			
-				mandv.setViewName("welcome"); 
-				getEmpser().updateFlag(1, empname,pass);  
-				return mandv;	
+				mandv.setViewName("watchshop"); 
+				empser.updateFlag(1, empname,pass);  
+				return mandv;
 				}
 			else {
 					
@@ -146,14 +149,15 @@ public class controller {
 			
 		}
 		
+		mandv.addObject("myobj", emp);
+		
 		mandv.setViewName("Register");	
+		
 		return mandv;
 		
 	}
 	@RequestMapping(method = RequestMethod.GET,value = "/log")
 	public ModelAndView logout(Employee emp,HttpServletRequest request) {
-		
-		
 		
 		empser.updateFlag(0, request.getParameter("name"), request.getParameter("pass"));
 		
@@ -161,7 +165,7 @@ public class controller {
 		
 	}
 	
-	@RequestMapping(method = RequestMethod.GET,value = "/shop")
+	@RequestMapping(method = RequestMethod.POST,value = "/shop")
 	public String shop(Employee emp,HttpServletRequest request) {
 		
 		Enumeration<String> em=request.getParameterNames();

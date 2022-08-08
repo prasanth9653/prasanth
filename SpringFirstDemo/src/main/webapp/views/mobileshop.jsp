@@ -11,8 +11,8 @@
 <meta charset="ISO-8859-1">
 <title>Mobile Shop</title>
 </head>
-<body><center>
-<h1>Mobile Shop</h1>
+<body>
+<h1>Watch Shop</h1>
 <%! ResultSet rs ;
     DbCon db ;
     public void jspInit() {
@@ -20,15 +20,16 @@
     }
 %>
 <form action="/cont/shop" method="post">
-<span><input type="hidden" name="shop" value="Invoice">
+<input type="hidden" name="shop" value="Invoice">
 <% rs=db.checkTable("mobileshop"); 
 while(rs.next()){ %>
 <input type="checkbox" name=<%=rs.getString(1) %> value=<%=rs.getString(2) %> >
 	<%=rs.getString(1) %>
 	<img alt="Image not found......" src=/cont/shopimg?shopname=mobileshop&name=<%=rs.getString(1) %> width="100px" height="100px">
-	 <% } %></span>
-      <input class="sub" type="submit" value="Next">
+	 <% } %>
+    <input  type="submit" value="Next">
 </form>
-</center>
+<br>
+
 </body>
 </html>
