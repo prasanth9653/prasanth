@@ -23,7 +23,7 @@ public class ServletDemo2 extends HttpServlet {
     	public void init(ServletConfig config) throws ServletException {
     		// TODO Auto-generated method stub
     	ServletContext app=config.getServletContext();
-		System.out.println("From Second Servlet1...:"+app.getAttribute("myglobal"));
+		System.out.println("From Second Servlet11...:"+app.getAttribute("myglobal"));
 		try
 		{
 			String path=app.getRealPath("/WEB-INF/config.properties");
