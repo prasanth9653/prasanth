@@ -80,7 +80,7 @@ abstract class ShoeShop
 class AnoudShoeShop extends ShoeShop
 {
 	public AnoudShoeShop() {
-		System.out.println("AnoudShoeShop object created");
+		System.out.println("AnoudShoeShop1 object created");
 	}
 	@Override
 	public shoe sellshoe() {
