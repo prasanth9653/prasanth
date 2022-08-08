@@ -22,18 +22,18 @@ public class ServletDemo3 extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
-//		String name=request.getParameter(":uname");
-//		request.setAttribute(name, name);
-//		System.out.println(request.getAttribute(name));
-//		HttpSession session=request.getSession();
-//		System.out.println(session);
-//		
-//		HttpSession session2=request.getSession(false);
-//		System.out.println(session2);
+		String name=request.getParameter(":uname");
+		request.setAttribute(name, name);
+		System.out.println(request.getAttribute(name));		
+		HttpSession session=request.getSession();
+		System.out.println(session);
+		
+	HttpSession session2=request.getSession(false);
+		System.out.println(session2);
 		
 		int count=1;
 		PrintWriter pw=response.getWriter();
-		HttpSession session=request.getSession();
+		HttpSession session1=request.getSession();
 		Object obj=session.getAttribute("counter");
 		if(obj==null)
 		{
