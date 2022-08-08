@@ -15,7 +15,7 @@ public class LoopDemo {
 				; 
 		 Scanner sc = new Scanner(System.in); 
 		 
-		 logger.info("n Please Enter any integer Value below 10: "); 
+		 logger.info("nAME Please Enter any integer Value below 10: "); 
 		 number = sc.nextInt(); 
 		 
 		 while (number <= 10) { 

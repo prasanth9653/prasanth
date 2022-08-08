@@ -19,7 +19,7 @@ public class GenericsDemo {
 }
 class Water{
 	public void sprinkle() {
-		System.out.println("water is sprinkled..");
+		System.out.println("water SFD is sprinkled..");
 	}
 }
 class Air{
